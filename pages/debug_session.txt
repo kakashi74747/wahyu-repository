@@ -1,0 +1,36 @@
+Not user or karyawan: Array
+(
+    [id_user] => 11
+    [username] => adam
+    [logged_in] => 1
+    [login_type] => user
+    [cart] => Array
+        (
+        )
+
+)
+
+Not user or karyawan: Array
+(
+    [id_user] => 11
+    [username] => adam
+    [logged_in] => 1
+    [login_type] => user
+    [cart] => Array
+        (
+        )
+
+)
+
+Not user or karyawan: Array
+(
+    [id_user] => 11
+    [username] => adam
+    [logged_in] => 1
+    [login_type] => user
+    [cart] => Array
+        (
+        )
+
+)
+

@@ -1,0 +1,1 @@
+Checkout: id_user=4, tanggal=2025-06-09 09:15:42, is_debug=0, total_after_discount=20000, discount=0, total_before_discount=20000
