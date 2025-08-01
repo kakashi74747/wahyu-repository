@@ -1,0 +1,219 @@
+Background styling
+body {
+    background-color: #e1c2fc ; /* Light blue background */
+    background-attachment: fixed; /* Make the background fixed during scroll */
+    background-position: center; /* Center the background image */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Quicksand:wght@500&display=swap');
+
+:root {
+  --bg-primary: #FFD6EC;
+  --bg-secondary: #f0a7c4;
+  --accent-pink: #FF9AA2;
+  --accent-purple: #CBAACB;
+  --text-dark: #4B4453;
+  --font-kawaii: 'Sacramento', cursive;
+  --font-main: 'Quicksand', sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom right, #FFE4F3, #FFF7FB);
+  font-family: var(--font-main);
+  color: var(--text-dark);
+}
+
+.navbar-custom {
+  background-color: #FFF0FA;
+  border-radius: 25px;
+  margin: 20px auto;
+  padding: 15px 30px;
+  width: 95%;
+  box-shadow: 0 8px 20px rgba(255, 182, 193, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-brand {
+  font-family: var(--font-kawaii);
+  font-size: 2.2rem;
+  color: var(--accent-purple);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-shadow: 1px 1px 3px rgba(203, 170, 203, 0.4);
+}
+
+.navbar-brand img {
+  border: 2px solid var(--accent-purple);
+  box-shadow: 0 0 5px var(--accent-pink);
+}
+
+.nav-link {
+  color: var(--text-dark);
+  margin: 0 12px;
+  font-weight: bold;
+  font-size: 1.05rem;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-link::after {
+  content: " ♡";
+  opacity: 0;
+  transform: translateY(3px);
+  font-size: 0.9rem;
+  transition: 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--accent-pink);
+  transform: scale(1.1);
+}
+
+.nav-link:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: var(--accent-pink);
+  border-radius: 10px;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Ungu Aesthetic Table with Borders and Animation */
+table.table {
+    background-color: #f9f5ff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(155, 89, 182, 0.15);
+    border-collapse: collapse;
+    width: 100%;
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  .table thead.table-light {
+    background-color: #d7c0f8;
+    color: #4b0082;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .table th, .table td {
+    padding: 12px 16px;
+    vertical-align: middle;
+    border: 1px solid #e0caff; 
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .table tbody tr:hover {
+    background-color: #f0e6ff;
+    transform: scale(1.005);
+    box-shadow: 0 2px 8px rgba(160, 100, 255, 0.2);
+  }
+  
+  .table tbody td {
+    color: #3b3b3b;
+  }
+  
+  /* button styles */
+  .btn-primary {
+    background-color: #a066ff;
+    border-color: #a066ff;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-primary:hover {
+    background-color: #844aff;
+    border-color: #844aff;
+    transform: scale(1.05);
+  }
+  
+  .btn-warning {
+    background-color: #f3b0ff;
+    border-color: #f3b0ff;
+    color: #5a005a;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-warning:hover {
+    background-color: #e58dfb;
+    border-color: #e58dfb;
+    transform: scale(1.05);
+  }
+  
+  .btn-danger {
+    background-color: #ff6b81;
+    border-color: #ff6b81;
+    color: white;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-danger:hover {
+    background-color: #ff4d6d;
+    border-color: #ff4d6d;
+    transform: scale(1.05);
+  }
+  
+  /* Title Style BRUH */
+  h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    color: #7a42d1;
+    text-shadow: 1px 1px 2px rgba(122, 66, 209, 0.2);
+    animation: slideDown 0.7s ease-in-out;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slideDown {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ===== SEASONAL BANNER ===== */
+.seasonal-banner {
+    padding: 15px;
+    text-align: center;
+    background: linear-gradient(45deg, #6c4ca3, #e057ba);
+    color: white;
+    border-radius: 10px;
+    margin: 20px 0;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+/* ===== COFFEE GAME ===== */
+.coffee-game {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 100;
+}
+
+.coffee-bean {
+    width: 30px;
+    height: 30px;
+    background-image: url('../img/decorations/coffee-bean.png');
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s;
+}
